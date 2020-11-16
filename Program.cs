@@ -60,13 +60,16 @@ namespace Calculadora
                     break;
 
                 default:
+                    operacao = "invalida";
                     Console.WriteLine("Operação inválida! :( ");
                     break;
 
             }
 
             // Mostrar o resultado
-
+            if (operacao != "invalida")
+                 Console.WriteLine($"Calculo : {num1} com {num2} = {resultado}");
+                 
             // Concatenção
             // Console.WriteLine("Calculo : "+ num1+" com "+ num2+" = "+ resultado);
 
